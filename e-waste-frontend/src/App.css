@@ -1,0 +1,70 @@
+.App {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+header p {
+  margin: 10px 0 0 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 20px;
+  min-height: 70vh;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 10px;
+  }
+}
