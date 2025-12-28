@@ -1,18 +1,51 @@
 {
-  "name": "e-waste-backend",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "e-waste-ai-backend",
+  "version": "2.0.0",
+  "description": "AI-powered e-waste classification system with user authentication and recycling guidance",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "test": "jest --watchAll",
+    "test:ci": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "e-waste",
+    "ai",
+    "recycling",
+    "classification",
+    "environment",
+    "sustainability"
+  ],
+  "author": "E-Waste AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HarrickChristoJP/ewaste-ai-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HarrickChristoJP/ewaste-ai-platform/issues"
+  },
+  "homepage": "https://github.com/HarrickChristoJP/ewaste-ai-platform#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "dependencies": {
     "axios": "^1.13.2",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "multer": "^2.0.2"
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.0.2",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^7.1.4"
   }
 }
